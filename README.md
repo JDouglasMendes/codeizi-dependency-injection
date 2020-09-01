@@ -2,6 +2,11 @@
 
 ### Instalation
 
+```
+dotnet add package Codeizi.DI --version 1.0.0
+````
+
+Or
 
 
 ### Usage
@@ -36,7 +41,6 @@ Or
     typeof(SingletonService),
     InstanceContext.Singleton)]
 ```
-
 
 ### In Startup.cs
 
