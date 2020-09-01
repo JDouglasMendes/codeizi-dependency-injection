@@ -8,6 +8,8 @@ dotnet add package Codeizi.DI --version 1.0.0
 
 Or
 
+![exemple in manager vs studio](https://github.com/JDouglasMendes/di-helper/blob/master/ManagerDINuget.jpg?raw=tru)
+
 
 ### Usage
 
