@@ -17,7 +17,7 @@ Or
 [Injectable()]
 public class ScopedIndividualService
 ```
-Case your class implements interface, can indicate as folows:
+When your class implements interface, can indicate as folows:
 
 ```C#
 [Injectable(typeof(IContract),typeof(ScopedService))]
@@ -52,4 +52,4 @@ Or
 
 ### Future Features
 
-- Add multiples attributes in unique class.
+- Add multiples attributes in single class.
