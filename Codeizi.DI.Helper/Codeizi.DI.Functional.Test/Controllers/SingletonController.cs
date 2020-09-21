@@ -14,13 +14,16 @@ namespace Codeizi.DI.Functional.Test.Controllers
     {
         private readonly ISingletonContract _contract;
         private readonly SingletonIndividualService _serviceType;
+        private readonly InjectableSingletonSingle _injectableSingletonSingle;
 
         public SingletonController(
             ISingletonContract contract,
-            SingletonIndividualService serviceType)
+            SingletonIndividualService serviceType,
+            InjectableSingletonSingle injectableSingletonSingle)
         {
             _contract = contract ?? throw new ArgumentException(nameof(contract));
-            _serviceType = serviceType ?? throw new ArgumentException(nameof(_serviceType));
+            _serviceType = serviceType ?? throw new ArgumentException(nameof(serviceType));
+            _injectableSingletonSingle = injectableSingletonSingle ?? throw new ArgumentException(nameof(injectableSingletonSingle));
         }
 
         [HttpGet]
@@ -29,7 +32,8 @@ namespace Codeizi.DI.Functional.Test.Controllers
             return Ok(new List<string>
             {
                 _contract.ToString(),
-                _serviceType.ToString()
+                _serviceType.ToString(),
+                _injectableSingletonSingle.ToString() 
             });
         }
     }

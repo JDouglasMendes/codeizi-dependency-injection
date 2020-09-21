@@ -2,7 +2,7 @@
 
 namespace Codeizi.DI.Helper.Anotations
 {
-    public sealed class InjectableAttribute : Attribute
+    public class InjectableAttribute : Attribute
     {
         internal InstanceContext Context { get; }
         internal Type Contract { get; }

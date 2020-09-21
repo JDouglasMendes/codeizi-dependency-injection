@@ -2,8 +2,7 @@
 
 namespace Codeizi.DI.Functional.Test.Injectables
 {
-    [Injectable(typeof(IContract),
-        typeof(ScopedService))]
+    [Injectable(typeof(IContract),typeof(ScopedService))]
     public class ScopedService : IContract
     {
     }

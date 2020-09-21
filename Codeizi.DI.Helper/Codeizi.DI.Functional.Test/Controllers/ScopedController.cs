@@ -1,4 +1,5 @@
 ﻿using Codeizi.DI.Functional.Test.Injectables;
+using Codeizi.DI.Functional.Test.Injectables.Scoped;
 using Microsoft.AspNetCore.Mvc;
 using System;
 using System.Collections.Generic;
@@ -11,13 +12,15 @@ namespace Codeizi.DI.Functional.Test.Controllers
     {
         private readonly IContract _contract;
         private readonly ScopedIndividualService _serviceType;
-
+        private readonly ScopedInjectableSingle _scopedInjectableSingle;
         public ScopedController(
             IContract contract,
-            ScopedIndividualService serviceType)
+            ScopedIndividualService serviceType,
+            ScopedInjectableSingle scopedInjectableSingle)
         {
             _contract = contract ?? throw new ArgumentException(nameof(contract));
-            _serviceType = serviceType ?? throw new ArgumentException(nameof(_serviceType));
+            _serviceType = serviceType ?? throw new ArgumentException(nameof(serviceType));
+            _scopedInjectableSingle = scopedInjectableSingle ?? throw new ArgumentException(nameof(scopedInjectableSingle));
         }
 
         [HttpGet]
@@ -26,7 +29,8 @@ namespace Codeizi.DI.Functional.Test.Controllers
             return Ok(new List<string>
             {
                 _contract.ToString(),
-                _serviceType.ToString()
+                _serviceType.ToString(),
+                _scopedInjectableSingle.ToString()
             });
         }
     }
