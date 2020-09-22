@@ -1,15 +1,13 @@
-﻿using Codeizi.DI.Helper.Anotations;
+﻿using Codeizi.DI.Anotations;
 using Microsoft.Extensions.DependencyInjection;
 using System;
-using System.Collections.Generic;
-using System.Text;
 
 namespace Codeizi.DI.AspNetCore
 {
     internal interface IInjectionService
     {
         void AddService(
-            IServiceCollection services, 
+            IServiceCollection services,
             InjectableAttribute injectableAttribute,
             Type type);
     }

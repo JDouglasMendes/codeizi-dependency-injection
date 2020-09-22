@@ -1,4 +1,4 @@
-﻿using Codeizi.DI.Helper.Anotations;
+﻿using Codeizi.DI.Anotations;
 
 namespace Codeizi.DI.Functional.Test.Injectables.Transient
 {

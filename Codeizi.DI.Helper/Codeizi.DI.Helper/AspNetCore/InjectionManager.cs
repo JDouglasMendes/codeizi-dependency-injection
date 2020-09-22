@@ -1,4 +1,4 @@
-﻿using Codeizi.DI.Helper.Anotations;
+﻿using Codeizi.DI.Anotations;
 using Microsoft.Extensions.DependencyInjection;
 using System;
 using System.Collections.Generic;

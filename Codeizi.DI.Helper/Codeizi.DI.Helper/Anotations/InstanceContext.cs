@@ -1,4 +1,4 @@
-﻿namespace Codeizi.DI.Helper.Anotations
+﻿namespace Codeizi.DI.Anotations
 {
     public enum InstanceContext
     {

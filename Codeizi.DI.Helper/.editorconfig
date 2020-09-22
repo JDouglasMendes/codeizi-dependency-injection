@@ -1,0 +1,4 @@
+﻿[*.cs]
+
+# CA1813: Avoid unsealed attributes
+dotnet_diagnostic.CA1813.severity = none

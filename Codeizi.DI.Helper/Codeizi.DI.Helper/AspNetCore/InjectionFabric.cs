@@ -1,4 +1,4 @@
-﻿using Codeizi.DI.Helper.Anotations;
+﻿using Codeizi.DI.Anotations;
 using System;
 
 namespace Codeizi.DI.AspNetCore
@@ -13,6 +13,5 @@ namespace Codeizi.DI.AspNetCore
             InstanceContext.Singleton => new SingletonInjector(),
             _ => throw new ArgumentException(nameof(context)),
         };
-
     }
 }

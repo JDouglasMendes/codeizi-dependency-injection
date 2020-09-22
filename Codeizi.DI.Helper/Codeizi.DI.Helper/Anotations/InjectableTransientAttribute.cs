@@ -1,8 +1,8 @@
-﻿using Codeizi.DI.Helper.Anotations;
-using System;
+﻿using System;
 
 namespace Codeizi.DI.Anotations
 {
+    [AttributeUsage(AttributeTargets.Class, Inherited = false, AllowMultiple = false)]
     public sealed class InjectableTransientAttribute : InjectableAttribute
     {
         public InjectableTransientAttribute()
@@ -12,7 +12,7 @@ namespace Codeizi.DI.Anotations
         public InjectableTransientAttribute(
             Type contract,
             Type implementation)
-            : base (contract, implementation, InstanceContext.Transient)
+            : base(contract, implementation, InstanceContext.Transient)
         { }
     }
 }

@@ -1,8 +1,8 @@
-﻿using Codeizi.DI.Helper.Anotations;
+﻿using Codeizi.DI.Anotations;
 
-namespace Codeizi.DI.Functional.Test.Injectables
+namespace Codeizi.DI.Functional.Test.Injectables.Scoped
 {
-    [Injectable(typeof(IContract),typeof(ScopedService))]
+    [Injectable(typeof(IContract), typeof(ScopedService))]
     public class ScopedService : IContract
     {
     }

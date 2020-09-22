@@ -1,7 +1,8 @@
 ﻿using System;
 
-namespace Codeizi.DI.Helper.Anotations
+namespace Codeizi.DI.Anotations
 {
+    [AttributeUsage(AttributeTargets.Class, Inherited = true, AllowMultiple = false)]
     public class InjectableAttribute : Attribute
     {
         internal InstanceContext Context { get; }

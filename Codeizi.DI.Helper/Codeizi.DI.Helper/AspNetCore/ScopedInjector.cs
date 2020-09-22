@@ -1,4 +1,4 @@
-﻿using Codeizi.DI.Helper.Anotations;
+﻿using Codeizi.DI.Anotations;
 using Microsoft.Extensions.DependencyInjection;
 using System;
 
@@ -7,7 +7,7 @@ namespace Codeizi.DI.AspNetCore
     public class ScopedInjector : IInjectionService
     {
         public void AddService(
-            IServiceCollection services, 
+            IServiceCollection services,
             InjectableAttribute injectableAttribute,
             Type type)
         {
