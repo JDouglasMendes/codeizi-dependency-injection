@@ -2,7 +2,7 @@
 
   <PropertyGroup>
     <TargetFramework>net5.0</TargetFramework>
-    <PackageId>Codeizi.Dendency.Injection</PackageId>
+    <PackageId>Codeizi.Dependency.Injection</PackageId>
     <Version>2.0.0</Version>
     <Authors>Douglas Mendes</Authors>
     <Company>codeizi.com.br</Company>
