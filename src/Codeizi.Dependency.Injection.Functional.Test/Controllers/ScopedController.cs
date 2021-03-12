@@ -18,9 +18,9 @@ namespace Codeizi.DI.Functional.Test.Controllers
             ScopedIndividualService serviceType,
             ScopedInjectableSingle scopedInjectableSingle)
         {
-            _contract = contract ?? throw new ArgumentException(nameof(contract));
-            _serviceType = serviceType ?? throw new ArgumentException(nameof(serviceType));
-            _scopedInjectableSingle = scopedInjectableSingle ?? throw new ArgumentException(nameof(scopedInjectableSingle));
+            _contract = contract ?? throw new ArgumentException(null, nameof(contract));
+            _serviceType = serviceType ?? throw new ArgumentException(null, nameof(serviceType));
+            _scopedInjectableSingle = scopedInjectableSingle ?? throw new ArgumentException(null, nameof(scopedInjectableSingle));
         }
 
         [HttpGet]

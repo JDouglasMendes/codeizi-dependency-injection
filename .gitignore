@@ -1,8 +1,6 @@
-
-Codeizi.DI.Helper/.vs/*
-Codeizi.DI.Helper/Codeizi.DI.Functional.Test/bin/*
-Codeizi.DI.Helper/Codeizi.DI.Functional.Test/obj/*
-Codeizi.DI.Helper/Codeizi.DI.Helper/bin/*
-Codeizi.DI.Helper/Codeizi.DI.Helper/obj/*
-Codeizi.DI.Helper/Codeizi.DI.Test/bin/*
-Codeizi.DI.Helper/Codeizi.DI.Test/obj/*
+src/Codeizi.Dependency.Injection.Functional.Test/bin/*
+src/Codeizi.Dependency.Injection.Functional.Test/obj/*
+src/Codeizi.Dependency.Injection.Helper/bin/*
+src/Codeizi.Dependency.Injection.Helper/obj/*
+src/Codeizi.Dependency.Injection.Test/bin/*
+src/Codeizi.Dependency.Injection.Test/obj/*
