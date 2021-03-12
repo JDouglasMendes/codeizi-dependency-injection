@@ -1,10 +1,9 @@
-﻿using Codeizi.DI.Anotations;
-using Microsoft.Extensions.DependencyInjection;
+﻿using Microsoft.Extensions.DependencyInjection;
 using System;
 using System.Collections.Generic;
 using System.Reflection;
 
-namespace Codeizi.DI.AspNetCore
+namespace Codeizi.Dependency.Injection
 {
     internal class InjectionManager
     {

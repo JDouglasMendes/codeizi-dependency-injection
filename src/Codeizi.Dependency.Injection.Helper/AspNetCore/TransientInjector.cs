@@ -1,8 +1,8 @@
-﻿using Codeizi.DI.Anotations;
+﻿
 using Microsoft.Extensions.DependencyInjection;
 using System;
 
-namespace Codeizi.DI.AspNetCore
+namespace Codeizi.Dependency.Injection
 {
     public class TransientInjector : IInjectionService
     {

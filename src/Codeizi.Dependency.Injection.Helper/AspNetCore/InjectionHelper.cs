@@ -1,10 +1,10 @@
-﻿using Codeizi.DI.Anotations;
+﻿
 using Microsoft.Extensions.DependencyInjection;
 using System;
 using System.Linq;
 using System.Reflection;
 
-namespace Codeizi.DI.AspNetCore
+namespace Codeizi.Dependency.Injection
 {
     public static class InjectionHelper
     {

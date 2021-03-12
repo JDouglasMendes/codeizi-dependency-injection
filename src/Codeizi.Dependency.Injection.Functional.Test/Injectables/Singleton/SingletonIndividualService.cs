@@ -1,4 +1,6 @@
-﻿using Codeizi.DI.Anotations;
+﻿
+
+using Codeizi.Dependency.Injection;
 
 namespace Codeizi.DI.Functional.Test.Injectables.Singleton
 {

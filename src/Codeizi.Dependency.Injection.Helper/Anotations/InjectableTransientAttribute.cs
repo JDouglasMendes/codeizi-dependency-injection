@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Codeizi.DI.Anotations
+namespace Codeizi.Dependency.Injection
 {
     [AttributeUsage(AttributeTargets.Class, Inherited = false, AllowMultiple = false)]
     public sealed class InjectableTransientAttribute : InjectableAttribute

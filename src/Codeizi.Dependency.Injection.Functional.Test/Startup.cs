@@ -1,4 +1,4 @@
-using Codeizi.DI.AspNetCore;
+using Codeizi.Dependency.Injection;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
@@ -15,13 +15,13 @@ namespace Codeizi.DI.Functional.Test
         }
 
         public IConfiguration Configuration { get; }
-        
+
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllers();
             services.AddInjectables(this.GetType().Assembly);
         }
- 
+
         public static void Configure(IApplicationBuilder app, IWebHostEnvironment env)
         {
             if (env.IsDevelopment())

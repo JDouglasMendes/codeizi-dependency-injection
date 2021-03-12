@@ -1,7 +1,6 @@
-﻿using Codeizi.DI.Anotations;
-using System;
+﻿using System;
 
-namespace Codeizi.DI.AspNetCore
+namespace Codeizi.Dependency.Injection
 {
     internal static class InjectionFabric
     {
@@ -11,7 +10,7 @@ namespace Codeizi.DI.AspNetCore
             InstanceContext.Scoped => new ScopedInjector(),
             InstanceContext.Transient => new TransientInjector(),
             InstanceContext.Singleton => new SingletonInjector(),
-            _ => throw new ArgumentException(nameof(context)),
+            _ => throw new ArgumentException(null, nameof(context)),
         };
     }
 }

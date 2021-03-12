@@ -1,4 +1,4 @@
-﻿namespace Codeizi.DI.Anotations
+﻿namespace Codeizi.Dependency.Injection
 {
     public enum InstanceContext
     {

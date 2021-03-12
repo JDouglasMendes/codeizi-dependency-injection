@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Codeizi.DI.Anotations
+namespace Codeizi.Dependency.Injection
 {
     [AttributeUsage(AttributeTargets.Class, Inherited = true, AllowMultiple = false)]
     public class InjectableAttribute : Attribute
